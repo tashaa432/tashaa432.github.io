@@ -3,23 +3,31 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
 }
 
 /* Header styling */
 header {
-    background: #333;
+    background: rgba(51, 51, 51, 0.8);
     color: #fff;
-    padding: 10px 0;
-    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
 }
 
 header nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
 }
 
 header nav ul li {
-    display: inline;
     margin: 0 10px;
 }
 
@@ -35,13 +43,21 @@ header nav ul li a:hover {
 
 /* Main content styling */
 main {
-    padding: 20px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    padding-top: 60px; /* To avoid header overlap */
 }
 
 .intro {
-    max-width: 600px;
-    margin: auto;
+    max-width: 300px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    position: relative;
 }
 
 .intro h1 {
@@ -55,15 +71,19 @@ main {
 
 /* Footer styling */
 footer {
-    background: #333;
+    background: rgba(51, 51, 51, 0.8);
     color: #fff;
     text-align: center;
     padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
 footer .social-media {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 footer .social-media li {
